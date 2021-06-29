@@ -21,8 +21,13 @@
 
 
 def insertion_sort(array: list) -> list:
-    pass
-
+    for i in range(0, len(array) - 1):
+        for j in range(i + 1, 0, -1):
+            if array[j] < array[j - 1]:
+                array[j], array[j - 1] = array[j - 1],  array[j]
+            else:
+                break
+    return array
 
 if __name__ == '__main__':
     assert insertion_sort([2, 1, 5, 4, 7]) == [1, 2, 4, 5, 7]
