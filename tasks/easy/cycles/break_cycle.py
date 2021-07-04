@@ -33,8 +33,8 @@ def lets_break(n: int) -> int:
     while True:
         if current_value >= 10:
             break
-                current_value += 1
-                counter += 1
+        current_value += 1
+        counter += 1
     return counter
 
 

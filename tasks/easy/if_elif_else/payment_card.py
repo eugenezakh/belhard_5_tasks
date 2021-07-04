@@ -22,8 +22,14 @@ def hide_card_numbers(card_number: str) -> str:
     :return: строка с номером карты со звездочками или строка "Ошибка"
     :rtype: str
     """
-    # TODO написать свой код здесь
-    return None
+    if card_number.isdigit() and len(card_number) == 16:
+        first_four = card_number[:4]
+        last_four = card_number[12:]
+        middle = "********"
+        result = first_four + middle + last_four
+    else:
+        result = print("Ошибка")
+    return result
 
 
 if __name__ == '__main__':
