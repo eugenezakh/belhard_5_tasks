@@ -3,10 +3,13 @@
 Вернуть True или False
 Является ли число степенью 2
 """
-
+import math
 
 def is_pow_2(number) -> bool:
-    return None
+    if math.log(number, 2).is_integer():
+        return True
+    else:
+        return False
 
 
 if __name__ == '__main__':

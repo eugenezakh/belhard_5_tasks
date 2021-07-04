@@ -12,7 +12,8 @@ num_sum(321) -> 6
 
 
 def num_sum(numb: int) -> int:
-    result = None
+    for i in len(numb):
+        result += numb % 10
     return result
 
 
