@@ -12,10 +12,9 @@ from collections import Counter
 def common_and_longest(text: str) -> tuple:
     temp = text.split()
     common = Counter(temp).most_common(1)
-    print(common)
+    common = common[0][0]
     for i in range(len(temp) - 1):
         if len(temp[i]) > len(temp[i + 1]):
-            print(temp[i])
             longest = temp[i]
     return common, longest
 
