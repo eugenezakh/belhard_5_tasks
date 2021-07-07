@@ -5,6 +5,7 @@
 """
 import math
 
+
 def is_pow_2(number) -> bool:
     if math.log(number, 2).is_integer():
         return True

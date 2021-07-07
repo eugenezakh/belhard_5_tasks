@@ -13,7 +13,6 @@ def not_3(array: list) -> list:
             result.append(array[i])
     return result
 
-not_3([2, 1, 3, 5, 6, 4, 7])
 
 if __name__ == '__main__':
     assert not_3([2, 1, 3, 5, 6, 4, 7]) == [2, 1, 5, 4, 7]

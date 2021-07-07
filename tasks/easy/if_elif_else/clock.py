@@ -46,7 +46,6 @@ def get_seconds(h: int, m: int, s: int) -> Union[int, str]:
     """
     if h < 24 and m < 60 and s < 60:
         result = h * 3600 + m * 60 + s
-        print(f"")
     elif h > 23:
         print("Ошибка. Допустимое значение для часов 0..23")
     elif m > 59:

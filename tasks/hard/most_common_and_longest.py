@@ -9,6 +9,7 @@
 """
 from collections import Counter
 
+
 def common_and_longest(text: str) -> tuple:
     temp = text.split()
     common = Counter(temp).most_common(1)
