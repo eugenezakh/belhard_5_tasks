@@ -7,11 +7,16 @@
 можно решить с помощью циклов и переменных, но предпочтительней с
 помощью модуля collections, используя collections.Counter
 """
-
+from collections import Counter
 
 def common_and_longest(text: str) -> tuple:
-    common = None
-    longest = None
+    temp = text.split()
+    common = Counter(temp).most_common(1)
+    print(common)
+    for i in range(len(temp) - 1):
+        if len(temp[i]) > len(temp[i + 1]):
+            print(temp[i])
+            longest = temp[i]
     return common, longest
 
 
